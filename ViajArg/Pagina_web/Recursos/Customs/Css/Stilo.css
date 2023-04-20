@@ -1,0 +1,95 @@
+*{
+box-sizing: border-box;
+}
+body{
+    font-family:"Montserrat", sans-serif;
+    background: #ebecdae4;
+    margin: 0;
+}
+h3{font-size: 2em;}
+ul{ list-style: none;}
+p{ font-size: 1em;}
+li{font-size: 1em;}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(14, 56, 241, 0.942);
+    box-shadow: 2px 2px 2px rgb(3, 3, 3);
+    color: white;
+    background-color: rgba(14, 188, 241, 0.69);
+  
+}
+ button:hover{
+    background-color: rgba(14, 124, 241, 0.942);
+    cursor: pointer;
+ }
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background: rgba(14, 56, 241, 0.942);
+}
+header .logo{
+    margin:0 ;
+    height: 80px;
+    position: absolute;
+    padding: 25px 30px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color:rgb(249, 249, 26) ;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+  background-image: url("Img/bandera_argentina_grande.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ background-position: center center;
+}
+#regiones-Arriba{
+    color: black;
+    text-align: center;
+}
+
+#regiones-Arriba .container{
+padding: 150px 12px;
+}
+
+#regiones-Arriba p{
+    display: none;
+}
+
+.carta:first-child{
+background-image: url("Pagina_web/Img/Noroeste.jpg");
+}
+.carta:nth-child(2){
+
+}
+.carta:last-child{
+
+}
