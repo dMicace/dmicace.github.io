@@ -85,7 +85,7 @@ padding: 150px 12px;
 }
 
 .carta:first-child{
-background-image: url("Pagina_web/Img/Noroeste.jpg");
+background-image: url("../Img/Noroeste.jpg");
 }
 .carta:nth-child(2){
 
