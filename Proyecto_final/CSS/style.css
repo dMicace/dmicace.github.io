@@ -292,7 +292,7 @@ input:focus~.barra::before{
     background-repeat: no-repeat;
     background-position: left;
     height: 300px;
-    justify-content: right;
+    justify-content: space-between; 
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -311,13 +311,14 @@ input:focus~.barra::before{
 }
 
 #text-banner2{
-    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
     text-align: left;
     font-size: 5em;
     font-weight: 600;
     color: rgb(14, 56, 241);
     text-shadow: 3px 7px 8px rgba(2, 11, 49, 0.942);
-    transition: 5s;
 }
 /*Fin de estilos para el banner*/
 
@@ -433,6 +434,13 @@ input:focus~.barra::before{
     #text-banner{
         justify-content: right;
         color: black;
+    }
+    #text-banner2{
+        display: flex;
+        justify-content: left;
+        font-size: 3em;
+        font-weight: 600;
+        margin-left: 4%;
     }
     .row-cards-up{
         flex-wrap: wrap;
