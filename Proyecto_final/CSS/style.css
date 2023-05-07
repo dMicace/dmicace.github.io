@@ -2,12 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 
 body {
@@ -62,7 +63,7 @@ nav {
 
 .header .nav-links a {
     font-size: 700;
-    color: #ebecdae4;
+    color: white;
 }
 
 .header .nav-links a:hover {
@@ -183,7 +184,6 @@ input:focus~.barra::before{
 }
 
 .btn-enviar{
-    font-family: 'Open Sans';
     background: linear-gradient(to right, hsl(196, 93%, 70%), hsl(204, 64%, 44%));
     border: none;
     display: block;
@@ -299,14 +299,25 @@ input:focus~.barra::before{
 }
 
 /*Estilos para el Texto que va en el Banner*/
-.text-banner{
+#text-banner{
     width: 500px;
     text-align: justify;
     margin-right: 70px;
-    color: rgb(69, 68, 68);
-    font-size: 1.8em;
+    /* color: rgb(69, 68, 68); */
+    color: black;
+    font-size: 1.5em;
     display: flex;
     flex-wrap: wrap;
+}
+
+#text-banner2{
+    width: 650px;
+    text-align: left;
+    font-size: 5em;
+    font-weight: 600;
+    color: rgb(14, 56, 241);
+    text-shadow: 3px 7px 8px rgba(2, 11, 49, 0.942);
+    transition: 5s;
 }
 /*Fin de estilos para el banner*/
 
@@ -325,7 +336,7 @@ input:focus~.barra::before{
     margin-left: 16.8%;
 }
 .row-cards-down .card:last-child{
-     margin-right: 16.8%;
+    margin-right: 16.8%;
 }
 /*Estilos para Cada Tarjeta*/
 .card {
@@ -372,14 +383,13 @@ input:focus~.barra::before{
     display: flex;
     align-items: center;
     justify-content:center;
- 
-
 }
 .card-text-footer{
     text-align: justify;
     margin: 1px;
     width: 70%;
     color: white;
+    font-size: 0.8em;
 }
 
 /*Aquí van los Estilos para los Botones*/
@@ -413,14 +423,14 @@ input:focus~.barra::before{
 
 .footer a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: white;
 }
 
 /*Los media query para pantallas bajo los 850px*/
 @media (max-width: 850px) {
 
-    .text-banner{
+    #text-banner{
         justify-content: right;
         color: black;
     }
@@ -477,7 +487,7 @@ input:focus~.barra::before{
         margin-Right: 2.5%;
         margin-bottom: 10px;
     }
-    .text-banner{
+    #text-banner{
         margin-left: 4%;
     }
 }
