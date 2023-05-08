@@ -14,7 +14,7 @@
     <!--Fuente de Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style_pat.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header class="header">
@@ -50,8 +50,13 @@
 
     </header>
 <!--  Carrousel de imágenes  -->
+    <!-- se declaran imagenes para una carga mas rapida en el carrousel -->
+    <img src="../img/cuesta_del_obispo.jpg" alt="" style="display: none">
+    <img src="../img/garganta_del_diablo.jpg" alt="" style="display: none">
+    <img src="../img/purmamarca.jpg" alt="" style="display: none">
+    <img src="../img/salinas_grandes.jpg" alt="" style="display: none">
 
-    <div class="carrusel">
+    <div class="carrusel" id="noroeste">
         <div id="imagen_carrusel">
             <button id="retroceder">
                 <i class="fa-solid fa-angle-left"></i>
@@ -64,25 +69,26 @@
 
 <!-- Comienza el texto -->
 <section>
-    <h1 id="titulo_region">Patagonia</h1>
+    <h1 class="animate__animated animate__fadeInUp" id="titulo_region">Noroeste</h1>
     <p>
-        La mítica Patagonia atesora escenarios naturales increíbles.  Se ubica en el sur del territorio argentino y la conforman las provincias de La Pampa, Neuquén, Río Negro, La Pampa, Chubut, Santa Cruz y Tierra del Fuego, Antártida e Islas del Atlántico Sur.
+        Esta región de Argentina la integran seis provincias ubicadas en el noroeste del territorio: Jujuy, Salta, La Rioja, Catamarca, Santiago del Estero y Tucumán.
         <br>
-        Entre sus bellezas paisajísticas y grandes atractivos se destacan cinco sitios del Patrimonio Mundial (UNESCO): el Parque Nacional Los Glaciares, La Cueva de las Manos, el Parque Nacional Los Alerces y Península Valdés.
+        Es ante todo, una geografía de notables contrastes, extraordinaria belleza paisajística y riqueza cultural. La aridez de la Puna; la exuberante selva de las Yungas; planicies santiagueñas casi a nivel del mar, y los más de 6.800 metros de la Cordillera de los Andes. Allí donde la tierra muestra sus capas geológicas en Talpampaya, poniendo al descubierto secreteos milenarios, y donde cada paisaje norteño enmarca antiguas ruinas, fortalezas del período incaico, capillas coloniales, catedrales y basílicas.
         <br>
-        Por un lado, el cordón de la Cordillera de los Andes, se impone de norte a sur como uno de sus límites naturales y abre escenarios impactantes. Cumbres de volcanes con géiseres y aguas termales; montañas de donde descienden enormes glaciares, lagos y ríos.  Encantadores valles y aldeas de montaña rodeadas de bosques autóctonos milenarios, o extensos campos de estepa.
+        Los colores de la Quebrada, los Valles Calchaquíes, el Tren a las Nubes, los salares, las termas, el folclore, los platos típicos y el vino Torrontés de altura, son tan sólo algunas de las diversas opciones que vas a poder disfrutar en el noroeste argentino.
         <br>
-        Patagonia también sorprende con su biodiversidad y su fauna silvestre no menos increíble. Desde maras, ñandúes, guanacos y el ciervo colorado hasta el cóndor sobrevolando desde los andes a las sierras junto al mar.  También es hábitat de un rico mundo marino, donde numerosas especies forman colonias de lobos y elefantes marinos, pingüinos magallánicos, delfines, toninas, y otras que arriban por temporada donde se destaca la Ballena Franca Austral (Monumento Natural).
+        Los colores de los cerros se expresan en cada pieza original, ponchos y tejidos que podés encontrar en sus rutas de artesanos. El folklore se transmite de generación en generación, y podés escuchar zambas y chacareras en peñas y festivales. Los carnavales, las fiestas de la Pachamama, el Inti Raymi y los misachicos, te invitan a festejar con las comunidades locales en lo más íntimo de sus tradiciones.
+        <br><br>
+        ¡Descubrí todo lo que podés hacer en la Región Norte!
         <br>
-        Su gastronomía, te ofrece platos y sabores tan bien definidos que merecen una mención. Entre ellos, regionales a base del cordero patagónico, o carnes típicas de ciervo, chivo, truchas y otras delicias que pueden combinarse a la perfección con vinos de origen patagónico. Imperdibles son las picaditas de ahumados con cervezas artesanales y todos una tentación para los chocolates y dulces.
     </p>
 <!-- Contenedor del iFrame del mapa  -->
         <div class="contenedor_mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11381421.04582349!2d-79.82087532794095!3d-45.85795853670156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdefadac12340ab3%3A0xf5803d880367e318!2sPatagonia!5e0!3m2!1ses-419!2sar!4v1682383902900!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4382056.701848909!2d-65.41236785280962!3d-25.588563707154837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1683501561569!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 <!--Texto debajo del iFrame-->
-        <p>Formada por las provincias de La Pampa, Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego, con una superficie de 930.731 Km2 y una población total de 2.037.545 personas, cada rincón de la Patagonia Argentina ofrece una amplia gama de posibilidades para el relax, la recreación y la aventura, en un marco donde la exuberante naturaleza es la gran protagonista.</p>
+        <p>El noroeste argentino (NOA) es una región histórico-geográfica de Argentina, estando integrada por las provincias de: Jujuy, Salta, Tucumán, Catamarca, La Rioja y Santiago del Estero. Ocupa algo más del 20% del territorio nacional.</p>
 
 <!--Tarjetas de los lugares Populares-->
 
@@ -90,50 +96,48 @@
         <p id="populares">Lugares Populares</p>
         <div class="card"> 
             <div class="card-content">
-                <span>Neuquén</span>                <!--Provincia-->
-                <h2>San Martin de los Andes</h2>            <!--Lugar-->
+                <span>Jujuy</span>                <!--Provincia-->
+                <h2>Purmamarca</h2>            <!--Lugar-->
                 <p>                                             <!--Descripción del lugar-->
-                    San Martín es un destino muy cautivador por muchas razones, como disfrutar de un chocolate caliente en el corazón de la ciudad, relajarse tranquilamente frente al Lago Lácar o tomar un té mientras se contempla la ciudad desde lo alto.
+                    Purmamarca, en la provincia de Jujuy, al norte de Salta, es considerado uno de los pueblos más bellos de Argentina. Las casas de adobe de la ciudad y la iglesia colonial española son bonitas por derecho propio, pero el telón de fondo del espectacular Cerro de los Siete Colores (Cerro de los Siete Colores) hace que el área sea particularmente pintoresca.
                 </p>
             </div>
-            <img src="../img/Andes_card.jpg" alt="Imagen de la tarjeta">
+            <img src="../img/purmamarca_mini.jpg" alt="Imagen de la tarjeta">
         </div>
 
         <div class="card">  
             <div class="card-content">
-                <span>Rio Negro</span>
-                <h2>San Carlos de Bariloche</h2>
+                <span>Tucuman</span>
+                <h2>Casa de Tucuman</h2>
                 <p>
-                Bariloche es uno de los destinos turísticos más importantes de Argentina y el principal centro turístico de la provincia de Río Negro.
-                <br>
-                Con el majestuoso lago Nahuel Huapi a sus pies, esta ciudad es un sinónimo de turismo y un lugar imperdible para visitar.
+                    Es el monumento más venerable de la Argentina, en ella se juró la Independencia Nacional el 9 de Julio de 1816.
+                    <br>
+                    Ubicada en el centro de la ciudad, esta construcción de fines del siglo XVIII. Perteneció a Francisca Bazán de Laguna y constituye, sin lugar a dudas, uno de los sitios históricos más importantes de Argentina.
                 </p>
             </div>
-            <img src="../img/Bariloche_card.jpg" alt="Imagen de la tarjeta">
+            <img src="../img/tucuman_mini.jpg" alt="Imagen de la tarjeta">
         </div>
 
         <div class="card">  
             <div class="card-content">
-                <span>Santa Cruz</span>
-                <h2>Glaciar Perito Moreno</h2>
+                <span>Salta</span>
+                <h2>Tren a las nubes</h2>
                 <p>
-                Este glaciar es la imagen más representativa no solo del parque, sino también de la ciudad de El Calafate.
-                <br>
-                Lo que hace que este glaciar sea aún más especial es que es el más accesible de todos los glaciares para ver. Se puede caminar hacia él a través de un sistema de pasarelas que permiten una vista frontal completa y única.
+                    Introduzca algo de emoción en su visita turística en esta experiencia de ferrocarril "Tren a las nubes". Acceda a las increíbles vistas panorámicas de La Puna que no vería de otro modo.
                 </p>
             </div>
-            <img src="../img/Peritomoreno_card.JPG" alt="Imagen de la tarjeta">
+            <img src="../img/tren_mini.jpg" alt="Imagen de la tarjeta">
         </div>
 
         <div class="card">  
             <div class="card-content">
-                <span>Chubut</span>
-                <h2>Puerto Madryn</h2>
-                <p>Bautizada como la Capital Nacional del Buceo y las Actividades Subacuáticas, esta ciudad chubutense es mundialmente conocida por el avistaje de la ballena franca austral.
-                <br>
-                Ideal para visitar en familia, Puerto Madryn es una de las ciudades que más creció en la Patagonia y, a su vez, se transformó en un lugar de excelencia turística.</p>
+                <span>Salta</span>
+                <h2>Cafayate</h2>
+                <p>
+                    Cafayate es uno de los lugares más espectaculares de Argentina. Rodeado de montañas multicolores se puede conocer la Ruta del Vino más alta del mundo y disfrutar del lugar ideal para practicar turismo aventura.
+                </p>
             </div>
-            <img src="../img/Puertomadryn_card.jpg" alt="Imagen de la tarjeta">
+            <img src="../img/cafayate_mini.jpg" alt="Imagen de la tarjeta">
         </div>
 
     </article>
