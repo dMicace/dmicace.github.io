@@ -15,6 +15,7 @@
     <!--Fuente de Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/f3d9777f93.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,27 +52,32 @@
         <form action="" id="form">
             <div class="form">
                 <h1 class="titulo">Contacto</h1>
-                <div class="grupo">
-                    <input type="text" id="name" required><span class="barra"></span>
-                    <label for="">Nombre</label>
+                <div class="grupo" id="nombre">
+                    <input type="text" id="nombre" class="input" name="nombre" required><span class="barra"></span>
+                    <label for="nombre">Nombre</label>
+                    <p  class="text-error"><b>El nombre NO debe contener simbolos, guiones, numeros.</b></p>
                 </div>
-                <div class="grupo">
-                    <input type="text" id="name" required><span class="barra"></span>
-                    <label for="">Apellido</label>
+                <div class="grupo" id="apellido">
+                    <input type="text" id="apellido" class="input" name="apellido" required><span class="barra"></span>
+                    <label for="apellido">Apellido</label>
+                    <p  class="text-error"><b>El apellido NO debe contener simbolos, guiones, numeros.</b></p>
                 </div>
-                <div class="grupo">
-                    <input type="email" id="name" required><span class="barra"></span>
-                    <label for="">Mail</label>
+                <div class="grupo" id="mail">
+                    <input type="email" id="mail" class="input" name="mail" required><span class="barra"></span>
+                    <label for="mail">Mail</label>
+                    <p  class="text-error"><b>Ingresar email valido</b></p>
                 </div>
-                <div class="grupo">
-                    <input type="number" id="name" required><span class="barra"></span>
-                    <label for="">Telefono</label>
+                <div class="grupo" id="telefono">
+                    <input type="number" id="telefono" class="input" name="telefono" required><span class="barra"></span>
+                    <label for="telefono">Telefono</label>
+                    <p  class="text-error"><b>Ingresar solo numeros</b></p>
                 </div>
                 <button class="btn-enviar" type="submit">Enviar</button>
             </div>
         </form>
     </div>
 </body>
-<script type="text/javascript" src="../JS/nav.js"></script>
+<script type="text/javascript" src="../JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>

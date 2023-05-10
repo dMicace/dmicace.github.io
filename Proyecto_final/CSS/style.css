@@ -138,7 +138,9 @@ input{
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(17, 50, 97, 0.705);
+    
 }
+
 
 input:focus{
     outline: none;
@@ -200,6 +202,30 @@ input:focus~.barra::before{
     transform: scale(0.9);
 }
 
+/* estilos de input con validacion incorrecta */
+
+.input-incorrecto{
+    border: 2px solid #bb2929;
+    border-bottom: 2px solid #bb2929;;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+
+/* .input-incorrecto:active~label{
+    color: #bb2929;
+} */
+
+
+.text-error{
+    font-size: 12px;
+    padding: 5px;
+    color: #bb2929;
+    display: none;
+}
+.text-error-activo{
+    display: block;
+}
 
 
 
