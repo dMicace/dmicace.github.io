@@ -523,5 +523,16 @@ input:focus~.barra::before{
     }
     #text-banner{
         margin-left: 4%;
+        font-size: 1em;
+    }
+    #text-banner2{
+        font-size: 3em;
+    }
+    /* estilos para formulario */
+    #form{
+        width: auto;
+    }
+    .form h1{
+        font-size: 2em;
     }
 }

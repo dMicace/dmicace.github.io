@@ -382,4 +382,13 @@ inputs.forEach((input) =>{
 /*  */
 formulario.addEventListener('submit',(e) => {
     e.preventDefault();
+    formulario.reset();
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Gracias Por Contactarnos',
+        showConfirmButton: false,
+        timer: 2400,
+        timerProgressBar: true
+    })
 });
