@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #eeeee6;
+    background-color: white;
     min-width: 400px;
 }
 
@@ -438,19 +438,62 @@ input:focus~.barra::before{
     cursor: pointer;
     }
 
-/*Los Estilos del Footer*/
-.footer {
+/* footer*/
+
+footer {
     background-color: rgba(14, 56, 241, 0.942);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    padding: 5px 10px;
+    color: #fff;
+    padding: 15px 0;
+    height: 30vh;
 }
 
-.footer a{
+.footer-container {
+    max-width: 1200px;
+    /* width: 100%; */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    /* margin-right: 20px; */
+}
+
+.footer-logo img {
+    height: 13vh;
+}
+
+
+.contact ul li,
+.social ul li {
+    margin: 5px 0;
+    list-style: none;
+    /* color: #fff; */
+    
+}
+
+.contact i,
+.social i {
+    margin-right: 10px;
+}
+.social a{
     text-decoration: none;
-    font-size: 1.5em;
+    color: #fff;
+    
+}
+
+.footer-bottom {
+    background-color: #fff;
+    color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-style: italic;
+}
+.white{
     color: white;
 }
 
