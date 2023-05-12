@@ -144,10 +144,10 @@ if(patagonia) {
 if(cuyo){
     // Array que contiene las rutas de las imágenes del carrusel
     const IMAGENES = [
-        '../img/cuesta_del_obispo.jpg',
-        '../img/garganta_del_diablo.jpg',
-        '../img/purmamarca.jpg',
-        '../img/salinas_grandes.jpg'
+        '../img/cuyo-ca1.jpg',
+        '../img/cuyo-ca2.jpg',
+        '../img/cuyo-ca3.jpg',
+        '../img/cuyo-ca4.jpg'
     ];
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
     let posicionActual = 0;
