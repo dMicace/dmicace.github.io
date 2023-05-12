@@ -465,7 +465,22 @@ input:focus~.barra::before{
     }
 
 /* footer*/
+.footer {
+    background-color: rgba(14, 56, 241, 0.942);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #EEE;
+}
 
+.footer a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    
+}
 footer {
     background-color: rgba(14, 56, 241, 0.942);
     color: #fff;
