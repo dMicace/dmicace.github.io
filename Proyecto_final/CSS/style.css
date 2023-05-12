@@ -110,6 +110,7 @@ nav {
     text-align: center;
     font-weight: 700;
     font-size: 3.5rem;
+    transition: 1s;
 }
 
 #form{
@@ -117,6 +118,7 @@ nav {
     padding: 40px 0;
     border-radius: 10px;
     box-shadow: 0 0 6px 2px #2980B9;
+    transition: 0.7s;
 }
 
 .form{
@@ -227,6 +229,30 @@ input:focus~.barra::before{
     display: block;
 }
 
+/* AUTOCOMPLETADO */
+
+#azar{
+    font-family: 'Open Sans';
+    background: #2980B9;
+    color: white;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+#azar:hover{
+    border: 1px solid #2196f3;
+    background: transparent;
+    color: #2196f3;
+    font-size: 17   px;
+    transition: all  0.7s;
+}
 
 
 
@@ -533,6 +559,10 @@ footer {
         margin-Right: 2.5%;
         margin-bottom: 20px;
     }
+    #form{
+        width: 50vw;
+        transition: all 1s;
+    }
 }
 
 /*Los media query para pantallas bajo los 550px*/
@@ -577,5 +607,6 @@ footer {
     }
     .form h1{
         font-size: 2em;
+        transition: 1s;
     }
 }
