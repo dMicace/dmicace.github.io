@@ -262,42 +262,68 @@ margin: 0;
 footer {
     background-color: rgba(14, 56, 241, 0.942);
     color: #fff;
-    padding: 15px 0;
-    height: 30vh;
+    padding: 20px 0;
 }
 
 .footer-container {
     max-width: 1200px;
-    /* width: 100%; */
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Logo contacto social";
+    justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 15px;
-    /* margin-right: 20px; */
-}
+}  
+.footer-logo { grid-area: Logo; }
+
+.footer-contact { grid-area: contacto; }
+
+.footer-social { grid-area: social; }
 
 .footer-logo img {
-    height: 13vh;
+    height: 90px;
+    transform: scale(1.5);
 }
 
-
-.contact ul li,
-.social ul li {
-    margin: 5px 0;
+.footer-contact ul,
+.footer-social ul {
     list-style: none;
-    /* color: #fff; */
+}
+
+.footer-contact ul li,
+.footer-social ul li {
+    margin: 7px 0;
     
 }
 
-.contact i,
-.social i {
-    margin-right: 10px;
+.footer-contact i,
+.footer-social i {
+    margin-right: 11px;
+    width: 12px;
 }
-.social a{
+.footer-social ul li a{
     text-decoration: none;
-    color: #fff;
+    font-weight: 500;
+    color: white;
+}
+
+.footer-social ul li:first-child a:hover{
+    color:#3b5998;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.footer-social ul li:nth-child(2) a:hover{
+    color:#6cbcdf;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.footer-social ul li:last-child a:hover{
+    color:#E1306C;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     
 }
 
@@ -311,9 +337,6 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-style: italic;
-}
-.white{
-    color: white;
 }
 
 /* Media Queries */
@@ -342,6 +365,43 @@ footer {
         width: 100%;
         height: 100%;
         
+    }
+    .footer-social ul{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        
+    }
+    .footer-container{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+        "Logo contacto" 
+        "Logo social";
+        
+    }
+
+    .footer-social ul{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+       
+    }
+    .footer-contact i,
+    .footer-social i {
+    margin-right: 8px;
+    width: 10px;
+    }
+
+    
+    .footer-logo{
+        position: relative;
+        left:20px;
+        
+    }
+    .footer-logo img{
+        position: relative;
+        left: -20px;
     }
 
 }
