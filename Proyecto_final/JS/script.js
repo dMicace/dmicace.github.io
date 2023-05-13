@@ -268,10 +268,10 @@ if(nordeste){
 if(pampeana){
     // Array que contiene las rutas de las imágenes del carrusel
     const IMAGENES = [
-        '../img/cuesta_del_obispo.jpg',
-        '../img/garganta_del_diablo.jpg',
-        '../img/purmamarca.jpg',
-        '../img/salinas_grandes.jpg'
+        '../img/pampeana-ca1.jpg',
+        '../img/pampeana-ca2.jpg',
+        '../img/pampeana-ca3.jpg',
+        '../img/pampeana-ca4.jpg'
     ];
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
     let posicionActual = 0;
