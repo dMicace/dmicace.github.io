@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajArg</title>
+    <link rel="icon" href="../Img/logoico2.ico">
+    <!--Fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&family=Suwannaphum&display=swap"
+        rel="stylesheet">
+    <!--Fuente de Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style_pat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+<!---->            <a href="../index.html"><img src="../img/logo.png" alt="Logo de la marca"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li> <a class="Active" href="../index.html">Menú <br>principal </a></li>
+                <li>  <a href="./noroeste.html">Región<br/> Noroeste </a></li>
+                <li>  <a href="./nordeste.html">Región<br> Nordeste </a></li>
+                <li>  <a href="./pampeana.html">Región <br>Pampeana </a></li>
+                <li>   <a href="./cuyo.html">Región de<br> Cuyo </a></li>
+                <li>    <a href="./patagonia.html">Región<br> Patagónica </a></li>
+                <li> <a href="./contacto.html">Contacto </a></li>
+            </ul>            
+        </nav>
+
+<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close" >&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a class="Active" href="../index.html">Menú principal </a>
+                            <a href="./noroeste.html">Región Noroeste </a>
+                            <a href="./nordeste.html">Región Nordeste </a>
+                            <a href="./pampeana.html">Región Pampeana </a>
+                            <a href="./cuyo.html">Región de Cuyo </a>
+                            <a href="./patagonia.html">Región Patagónica </a>
+                            <a href="./contacto.html">Contacto </a>
+<!---->            </div>
+<!---->        </div>
+
+    </header>
+<!--  Carrousel de imágenes  -->
+    <!-- se declaran imagenes para una carga mas rapida en el carrousel -->
+    <img src="../img/cuesta_del_obispo.jpg" alt="" style="display: none">
+    <img src="../img/garganta_del_diablo.jpg" alt="" style="display: none">
+    <img src="../img/purmamarca.jpg" alt="" style="display: none">
+    <img src="../img/salinas_grandes.jpg" alt="" style="display: none">
+
+    <div class="carrusel" id="noroeste">
+        <div id="imagen_carrusel">
+            <button id="retroceder">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button id="avanzar">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </div>
+
+<!-- Comienza el texto -->
+<section>
+    <h1 class="animate__animated animate__fadeInUp" id="titulo_region">Noroeste</h1>
+    <p>
+        Esta región de Argentina la integran seis provincias ubicadas en el noroeste del territorio: Jujuy, Salta, La Rioja, Catamarca, Santiago del Estero y Tucumán.
+        <br>
+        Es ante todo, una geografía de notables contrastes, extraordinaria belleza paisajística y riqueza cultural. La aridez de la Puna; la exuberante selva de las Yungas; planicies santiagueñas casi a nivel del mar, y los más de 6.800 metros de la Cordillera de los Andes. Allí donde la tierra muestra sus capas geológicas en Talpampaya, poniendo al descubierto secreteos milenarios, y donde cada paisaje norteño enmarca antiguas ruinas, fortalezas del período incaico, capillas coloniales, catedrales y basílicas.
+        <br>
+        Los colores de la Quebrada, los Valles Calchaquíes, el Tren a las Nubes, los salares, las termas, el folclore, los platos típicos y el vino Torrontés de altura, son tan sólo algunas de las diversas opciones que vas a poder disfrutar en el noroeste argentino.
+        <br>
+        Los colores de los cerros se expresan en cada pieza original, ponchos y tejidos que podés encontrar en sus rutas de artesanos. El folklore se transmite de generación en generación, y podés escuchar zambas y chacareras en peñas y festivales. Los carnavales, las fiestas de la Pachamama, el Inti Raymi y los misachicos, te invitan a festejar con las comunidades locales en lo más íntimo de sus tradiciones.
+        <br><br>
+        ¡Descubrí todo lo que podés hacer en la Región Norte!
+        <br>
+    </p>
+<!-- Contenedor del iFrame del mapa  -->
+        <div class="contenedor_mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4382056.701848909!2d-65.41236785280962!3d-25.588563707154837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1683501561569!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+<!--Texto debajo del iFrame-->
+        <p>El noroeste argentino (NOA) es una región histórico-geográfica de Argentina, estando integrada por las provincias de: Jujuy, Salta, Tucumán, Catamarca, La Rioja y Santiago del Estero. Ocupa algo más del 20% del territorio nacional.</p>
+<!--Tarjetas de los lugares Populares-->
+
+    <article class="articulo">
+        <p id="populares">Lugares Populares</p>
+        <div class="card"> 
+            <div class="card-content">
+                <span>Jujuy</span>                <!--Provincia-->
+                <h2>Purmamarca</h2>            <!--Lugar-->
+                <p>                                             <!--Descripción del lugar-->
+                    Purmamarca, en la provincia de Jujuy, al norte de Salta, es considerado uno de los pueblos más bellos de Argentina. Las casas de adobe de la ciudad y la iglesia colonial española son bonitas por derecho propio, pero el telón de fondo del espectacular Cerro de los Siete Colores (Cerro de los Siete Colores) hace que el área sea particularmente pintoresca.
+                </p>
+            </div>
+            <img src="../img/purmamarca_mini.jpg" alt="Imagen de la tarjeta">
+        </div>
+
+        <div class="card">  
+            <div class="card-content">
+                <span>Tucuman</span>
+                <h2>Casa de Tucuman</h2>
+                <p>
+                    Es el monumento más venerable de la Argentina, en ella se juró la Independencia Nacional el 9 de Julio de 1816.
+                    <br>
+                    Ubicada en el centro de la ciudad, esta construcción de fines del siglo XVIII. Perteneció a Francisca Bazán de Laguna y constituye, sin lugar a dudas, uno de los sitios históricos más importantes de Argentina.
+                </p>
+            </div>
+            <img src="../img/tucuman_mini.jpg" alt="Imagen de la tarjeta">
+        </div>
+
+        <div class="card">  
+            <div class="card-content">
+                <span>Salta</span>
+                <h2>Tren a las nubes</h2>
+                <p>
+                    Introduzca algo de emoción en su visita turística en esta experiencia de ferrocarril "Tren a las nubes". Acceda a las increíbles vistas panorámicas de La Puna que no vería de otro modo.
+                </p>
+            </div>
+            <img src="../img/tren_mini.jpg" alt="Imagen de la tarjeta">
+        </div>
+
+        <div class="card">  
+            <div class="card-content">
+                <span>Salta</span>
+                <h2>Cafayate</h2>
+                <p>
+                    Cafayate es uno de los lugares más espectaculares de Argentina. Rodeado de montañas multicolores se puede conocer la Ruta del Vino más alta del mundo y disfrutar del lugar ideal para practicar turismo aventura.
+                </p>
+            </div>
+            <img src="../img/cafayate_mini.jpg" alt="Imagen de la tarjeta">
+        </div>
+    </article>
+</section>
+<br><br><br>
+        <!-- El Footer donde debe ir el Formulario de Contacto -->
+        <div class="footer">
+            <a href="./pages/contacto.html">Contacto</a>
+        </div>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html"><img src="../img/image.png" alt="Logo ViajArg"></a>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: calle 123</li>
+                    <li><i class="fas fa-phone"></i> Teléfono: 123-4567890</li>
+                    <li><i class="fas fa-envelope"></i> Email: info@viajarg.com</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#" class="icono white"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="#" class="icono white"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#" class="icono white"><i class="fab fa-instagram"></i>Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 ViajArg. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/f3d9777f93.js" crossorigin="anonymous"></script>
+</html>
