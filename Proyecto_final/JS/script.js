@@ -206,10 +206,10 @@ if(cuyo){
 if(nordeste){
     // Array que contiene las rutas de las imágenes del carrusel
     const IMAGENES = [
-        '../img/cuesta_del_obispo.jpg',
-        '../img/garganta_del_diablo.jpg',
-        '../img/purmamarca.jpg',
-        '../img/salinas_grandes.jpg'
+        '../img/ruinas-de-san-ignacio.jpg',
+        '../img/Corrientes-Capital.jpg',
+        '../img/Ruta-27.jpg',
+        '../img/Minas-de-Wanda.jpg'
     ];
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
     let posicionActual = 0;
