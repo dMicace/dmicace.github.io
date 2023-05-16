@@ -17,10 +17,10 @@ const pampeana = document.querySelector("#pampeana")
 if(noroeste){
     // Array que contiene las rutas de las imágenes del carrusel
     const IMAGENES = [
-        '../img/Campo-de-Piedra-Pomezjpg',
-        '../img/Casa_Histórica_de_Tucumán.jpg',
-        '../img/Iruya-Salta.jpg',
-        '../img/Valles_Calchaquies.jpg'
+       '../img/cuesta_del_obispo.jpg',
+        '../img/garganta_del_diablo.jpg',
+        '../img/purmamarca.jpg',
+        '../img/salinas_grandes.jpg'
     ];
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 3000;
     let posicionActual = 0;
